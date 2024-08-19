@@ -48,8 +48,8 @@ export default {
     backgroundPosition: {
       "move-hero":
         "bottom, bottom left, top right 38%, bottom 40% left 40%",
-      "move-about": "top, center bottom -1%",
-      "move-projects": "top, center bottom -1%",
+      "move-about": "top, center bottom -0.4%",
+      "move-projects": "top, center bottom",
     },
     backgroundSize: {
       "fit-hero": "contain, contain, auto, auto",

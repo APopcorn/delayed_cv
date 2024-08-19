@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply these styles globally */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+  height: 4px; /* Height of the scrollbar for horizontal scrollbars */
+}
+  
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4); /* Color of the scrollbar handle */
+  border-radius: 9999px; /* Roundness of the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}

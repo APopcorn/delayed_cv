@@ -1,3 +1,7 @@
+import LinkGit from "./linkComponents/LinkGit"
+import LinkCv from "./linkComponents/LinkCv"
+import LinkLinkedIn from "./linkComponents/LinkLinkedIn"
+
 const HomeContainer = () => {
   return (
     <div className="bg-hero-white overflow-hidden">
@@ -63,6 +67,13 @@ const HomeContainer = () => {
           ">
             Software Engineer
           </div>
+
+          <div className="flex flex-wrap justify-center gap-x-[10%] absolute inset-x-0 bottom-[5%]">
+            <LinkGit />
+            <LinkCv />
+            <LinkLinkedIn />
+          </div>
+
         </div>
       </div>
     </div>

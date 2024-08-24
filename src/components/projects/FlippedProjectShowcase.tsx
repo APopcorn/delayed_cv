@@ -3,10 +3,11 @@ import ExpandableTextArea from "./ExpandableTextArea";
 interface ProjectShowcaseProps {
   projectTitle: any;
   text: any;
+  link: any;
   img: any;
 }
 
-const FlippedProjectShowcase = ({ projectTitle, text, img }: ProjectShowcaseProps) => {
+const FlippedProjectShowcase = ({ projectTitle, text, link, img }: ProjectShowcaseProps) => {
   return (
     <div className="
       rounded-[2rem] 
@@ -29,11 +30,21 @@ const FlippedProjectShowcase = ({ projectTitle, text, img }: ProjectShowcaseProp
         col-start-4	col-end-6
         row-start-1	row-end-3
         m-10
-      ">
-        <h1 className="md:text-[5vw] text-[8vw]">{projectTitle}</h1>
+      "> 
+        <a 
+          href={link}
+          target="_blank" 
+          rel="noreferrer"
+        >
+          <h1 className="md:text-[5vw] text-[8vw]">{projectTitle}</h1>
+        </a>
         <ExpandableTextArea text={text} />
       </div>
-      <div className="
+      <a 
+        href={link}
+        target="_blank" 
+        rel="noreferrer"
+        className="
         bg-white
         rounded-[2rem]
         col-start-1	col-end-4
@@ -41,8 +52,10 @@ const FlippedProjectShowcase = ({ projectTitle, text, img }: ProjectShowcaseProp
         m-10
         aspect-[4/3]
         ">
-        <img src={img} alt="Garlic" />
-      </div>
+        <div className="m-8">
+          <img src={img} alt="Garlic" />
+        </div>
+      </a>
     </div>
   );
 };

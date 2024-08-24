@@ -81,7 +81,7 @@ Error generating stack: `+o.message+`
             after:left-0 
             after:bg-emerald-100
             after:hover:bg-emerald-200
-            after:absolute ref={navBarRef}
+            after:absolute
             after:h-[6px] 
             after:w-[0px]
             after:rounded-sm 
@@ -254,7 +254,7 @@ Error generating stack: `+o.message+`
         bg-contain 
         bg-no-repeat 
         bg-white 
-        w-[100%] flex flex-col items-center`,children:[p.jsx("h1",{className:"select-none text-[6.5vw]",children:"About Me"}),p.jsx(Wd,{}),p.jsx(bd,{})]}),n0=K.forwardRef(e0),tc=({text:e})=>{const[n,t]=K.useState(!1),[r,l]=K.useState(""),[o,i]=K.useState(100);K.useEffect(()=>{const s=()=>{window.innerWidth<640?i(50):window.innerWidth<1024?i(100):i(150)};return s(),window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),K.useEffect(()=>{l(n?e:e.slice(0,o)+"...")},[n,o,e]);const u=()=>{t(!n)};return p.jsxs("div",{className:"w-full max-w-lg mx-auto",children:[p.jsx("p",{className:"w-full p-2 rounded resize-none overflow-y-scroll",children:r}),e.length>o&&p.jsx("button",{onClick:u,className:"mt-2 text-blue-500 hover:underline focus:outline-none",children:n?"Show Less":"Show More"})]})},Hu=({projectTitle:e,text:n,img:t})=>p.jsxs("div",{className:`
+        w-[100%] flex flex-col items-center`,children:[p.jsx("h1",{className:"select-none text-[6.5vw]",children:"About Me"}),p.jsx(Wd,{}),p.jsx(bd,{})]}),n0=K.forwardRef(e0),tc=({text:e})=>{const[n,t]=K.useState(!1),[r,l]=K.useState(""),[o,i]=K.useState(100);K.useEffect(()=>{const s=()=>{window.innerWidth<640?i(50):window.innerWidth<1024?i(100):i(150)};return s(),window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),K.useEffect(()=>{l(n?e:e.slice(0,o)+"...")},[n,o,e]);const u=()=>{t(!n)};return p.jsxs("div",{className:"w-full max-w-lg mx-auto",children:[p.jsx("p",{className:"w-full p-2 rounded resize-none overflow-y-scroll",children:r}),e.length>o&&p.jsx("button",{onClick:u,className:"mt-2 text-blue-500 hover:underline focus:outline-none",children:n?"Show Less":"Show More"})]})},Hu=({projectTitle:e,text:n,link:t,img:r})=>p.jsxs("div",{className:`
       rounded-[2rem] 
       text-hero-text 
       
@@ -273,14 +273,14 @@ Error generating stack: `+o.message+`
         col-start-1	col-end-3
         row-start-1	row-end-3
         m-10
-      `,children:[p.jsx("h1",{className:"md:text-[5vw] text-[8vw]",children:e}),p.jsx(tc,{text:n})]}),p.jsx("div",{className:`
-        bg-white
-        rounded-[2rem]
-        col-start-3	col-end-6
-        row-start-1	row-end-3
-        m-10
-        aspect-[4/3]
-        `,children:p.jsx("img",{className:"flex",src:t,alt:"Garlic"})})]}),t0=({projectTitle:e,text:n,img:t})=>p.jsxs("div",{className:`
+      `,children:[p.jsx("a",{href:t,target:"_blank",rel:"noreferrer",children:p.jsx("h1",{className:"md:text-[5vw] text-[8vw]",children:e})}),p.jsx(tc,{text:n})]}),p.jsx("a",{href:t,target:"_blank",rel:"noreferrer",className:`
+          bg-white
+          rounded-[2rem]
+          col-start-3	col-end-6
+          row-start-1	row-end-3
+          m-10
+          aspect-[4/3]
+          `,children:p.jsx("div",{className:"m-8",children:p.jsx("img",{className:"flex",src:r,alt:e})})})]}),t0=({projectTitle:e,text:n,link:t,img:r})=>p.jsxs("div",{className:`
       rounded-[2rem] 
       text-hero-text 
       
@@ -299,18 +299,18 @@ Error generating stack: `+o.message+`
         col-start-4	col-end-6
         row-start-1	row-end-3
         m-10
-      `,children:[p.jsx("h1",{className:"md:text-[5vw] text-[8vw]",children:e}),p.jsx(tc,{text:n})]}),p.jsx("div",{className:`
+      `,children:[p.jsx("a",{href:t,target:"_blank",rel:"noreferrer",children:p.jsx("h1",{className:"md:text-[5vw] text-[8vw]",children:e})}),p.jsx(tc,{text:n})]}),p.jsx("a",{href:t,target:"_blank",rel:"noreferrer",className:`
         bg-white
         rounded-[2rem]
         col-start-1	col-end-4
         row-start-1	row-end-3
         m-10
         aspect-[4/3]
-        `,children:p.jsx("img",{src:t,alt:"Garlic"})})]}),r0="/delayed_cv/assets/Patch-CqZBV7qi.svg",l0="/delayed_cv/assets/Rumbi-CrI2RIJW.svg",o0="/delayed_cv/assets/Garlic-DRgJg6bz.svg",i0=(e,n)=>p.jsxs("div",{ref:n,className:`
+        `,children:p.jsx("div",{className:"m-8",children:p.jsx("img",{src:r,alt:"Garlic"})})})]}),r0="/delayed_cv/assets/Patch-CqZBV7qi.svg",l0="/delayed_cv/assets/Rumbi-CrI2RIJW.svg",o0="/delayed_cv/assets/Garlic-DRgJg6bz.svg",i0=(e,n)=>p.jsxs("div",{ref:n,className:`
         bg-no-repeat 
         bg-projects-all 
         bg-move-projects 
         bg-fit-projects 
 
         w-[100%]  
-        flex flex-col items-center`,children:[p.jsx("h1",{className:"select-none text-[6.5vw]",children:"Projects"}),p.jsx(Hu,{projectTitle:"Patch",text:"At the center of this cosmic narrative, a majestic crescent moon rises high in the starry expanse, its silvery curves adorned with delicate filigree that seems to shimmer like stardust. The lunar surface is etched with intricate patterns, echoing the ancient myths and legends of our collective imagination.",img:r0}),p.jsx(t0,{projectTitle:"Rumbi",text:"As you gaze upon this embroidered masterpiece, the boundaries between reality and fantasy blur, and the whispers of wonder become a gentle hum, reminding us that magic is always present, waiting to be discovered. This magnet becomes a cherished keepsake, a symbol of our innate curiosity and our deep connection to the mysteries of the universe.",img:l0}),p.jsx(Hu,{projectTitle:"Garlic",text:"The embroidered design is set against a soft, gradient blue background, evoking the infinite vastness of space. Delicate strands of yarn are woven together in an intricate dance, creating a textured depth that invites you to explore every nook and cranny. The magnet's surface seems almost tactile, as if you could reach out and touch the shimmering threads or the lunar landscape itself.",img:o0})]}),u0=K.forwardRef(i0);function s0(){const e=K.useRef(null),n=K.useRef(null),t=K.useRef(null),r={homeRefPoint:e,aboutMeRefPoint:n,projectsRefPoint:t},l=K.useRef(r);return p.jsx(p.Fragment,{children:p.jsxs("div",{className:"flex flex-col bg-white",children:[p.jsx(Id,{ref:l}),p.jsx(Bd,{ref:e}),p.jsx(n0,{ref:n}),p.jsx(u0,{ref:t})]})})}nc(document.getElementById("root")).render(p.jsx(K.StrictMode,{children:p.jsx(s0,{})}));
+        flex flex-col items-center`,children:[p.jsx("h1",{className:"select-none text-[6.5vw]",children:"Projects"}),p.jsx(Hu,{projectTitle:"Patch",text:"At the center of this cosmic narrative, a majestic crescent moon rises high in the starry expanse, its silvery curves adorned with delicate filigree that seems to shimmer like stardust. The lunar surface is etched with intricate patterns, echoing the ancient myths and legends of our collective imagination.",link:"https://github.com/APopcorn/CNC-Sewing-Machine",img:r0}),p.jsx(t0,{projectTitle:"Rumbi",text:"As you gaze upon this embroidered masterpiece, the boundaries between reality and fantasy blur, and the whispers of wonder become a gentle hum, reminding us that magic is always present, waiting to be discovered. This magnet becomes a cherished keepsake, a symbol of our innate curiosity and our deep connection to the mysteries of the universe.",link:"https://github.com/APopcorn/delayed_cv",img:l0}),p.jsx(Hu,{projectTitle:"Garlic",text:"The embroidered design is set against a soft, gradient blue background, evoking the infinite vastness of space. Delicate strands of yarn are woven together in an intricate dance, creating a textured depth that invites you to explore every nook and cranny. The magnet's surface seems almost tactile, as if you could reach out and touch the shimmering threads or the lunar landscape itself.",link:"https://github.com/APopcorn/delayed_cv",img:o0})]}),u0=K.forwardRef(i0);function s0(){const e=K.useRef(null),n=K.useRef(null),t=K.useRef(null),r={homeRefPoint:e,aboutMeRefPoint:n,projectsRefPoint:t},l=K.useRef(r);return p.jsx(p.Fragment,{children:p.jsxs("div",{className:"flex flex-col bg-white",children:[p.jsx(Id,{ref:l}),p.jsx(Bd,{ref:e}),p.jsx(n0,{ref:n}),p.jsx(u0,{ref:t})]})})}nc(document.getElementById("root")).render(p.jsx(K.StrictMode,{children:p.jsx(s0,{})}));

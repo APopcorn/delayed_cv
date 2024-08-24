@@ -1,10 +1,11 @@
 import LinkGit from "./linkComponents/LinkGit"
 import LinkCv from "./linkComponents/LinkCv"
 import LinkLinkedIn from "./linkComponents/LinkLinkedIn"
+import { forwardRef } from "react";
 
-const HomeContainer = () => {
+const HomeContainer = (_props: any, ref: any) => {
   return (
-    <div className="bg-hero-white overflow-hidden">
+    <div ref={ref} className="bg-hero-white overflow-hidden">
       <div className="bg-home-all bg-no-repeat bg-fit-hero bg-move-hero w-[100%] h-[100svh]">
         <div className="select-none text-hero-text whitespace-nowrap font-mono">
           <div className="
@@ -80,4 +81,4 @@ const HomeContainer = () => {
   );
 };
 
-export default HomeContainer;
+export default forwardRef(HomeContainer);

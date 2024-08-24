@@ -1,9 +1,11 @@
 import AboutMeBig from "./AboutMeBig";
 import AboutMeCluster from "./AboutMeCluster";
+import { forwardRef } from "react";
 
-const AboutMe = () => {
+const AboutMe = (_props: any, ref: any) => {
   return (
     <div
+      ref={ ref }
       className="
         bg-about-all 
         bg-move-about 
@@ -19,4 +21,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default forwardRef(AboutMe);

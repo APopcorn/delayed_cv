@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
 interface TextProps {
-    text: any;
-  }
+  text: any;
+}
 
 const ExpandableTextArea = ({ text }: TextProps) => {
   const [isExpanded, setIsExpanded] = useState(false);

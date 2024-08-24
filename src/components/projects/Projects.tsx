@@ -3,10 +3,12 @@ import FlippedProjectShowcase from "./FlippedProjectShowcase";
 import patch from "/src/assets/projects/Patch.svg"
 import rumbi from "/src/assets/projects/Rumbi.svg"
 import garlic from "/src/assets/projects/Garlic.svg"
+import { forwardRef } from "react";
 
-const Projects = () => {
+const Projects = (_props: any, ref: any) => {
   return (
     <div
+      ref={ref}
       className="
         bg-no-repeat 
         bg-projects-all 
@@ -24,4 +26,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default forwardRef(Projects);

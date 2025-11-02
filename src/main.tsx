@@ -10,11 +10,20 @@ const router = createBrowserRouter(
     [
         {
             path: "/",
-            element: <App />,
+            Component: App,
         },
         {
             path: "/project-gallery",
-            element: <ProjectGallery />,
+            Component: ProjectGallery,
+        },
+        {
+            path: "/project",
+            children: [
+                {
+                    path: "patch",
+                    Component: ProjectGallery,
+                },
+            ],
         },
     ],
     {

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import garlic from "../../assets/projects/Garlic.svg";
 import patch from "../../assets/projects/Patch.svg";
 import rumbi from "../../assets/projects/Rumbi.svg";
@@ -96,9 +97,12 @@ const ProjectGallery = () => {
                         Onion Project
                     </span>
                 </div>
-                <button className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition">
-                    Contact Me
-                </button>
+                <Link
+                    to="/"
+                    className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition inline-block"
+                >
+                    Home
+                </Link>
             </div>
 
             {/* Title */}

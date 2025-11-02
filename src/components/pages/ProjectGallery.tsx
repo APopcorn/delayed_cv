@@ -15,9 +15,9 @@ const ProjectGallery = () => {
     const projects: Project[] = [
         {
             id: 1,
-            name: "GARLIC",
+            name: "PATCH",
             image: garlic,
-            link: "https://github.com/APopcorn/delayed_cv",
+            link: "/project/patch",
         },
     ];
 
@@ -48,11 +48,9 @@ const ProjectGallery = () => {
             <div className="max-w-7xl mx-auto px-4 pb-32">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {projects.map((project) => (
-                        <a
+                        <Link
                             key={project.id}
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            to={project.link || "/"}
                             className="group"
                         >
                             <div className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
@@ -72,7 +70,7 @@ const ProjectGallery = () => {
                                     </h3>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

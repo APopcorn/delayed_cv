@@ -5,6 +5,8 @@ import App from "./App.tsx";
 import "./index.css";
 
 import ProjectGallery from "./components/pages/ProjectGallery.tsx";
+import PatchPage from "./components/pages/PatchPage.tsx";
+import Project from "./components/pages/Project.tsx";
 
 const router = createBrowserRouter(
     [
@@ -18,10 +20,11 @@ const router = createBrowserRouter(
         },
         {
             path: "/project",
+            Component: Project,
             children: [
                 {
                     path: "patch",
-                    Component: ProjectGallery,
+                    Component: PatchPage,
                 },
             ],
         },

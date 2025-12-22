@@ -38,6 +38,7 @@ const ProjectShowcase = ({ projectTitle, text, link, img }: ProjectShowcaseProps
         </div>
         <Link 
           to={`/project/${projectTitle.toLowerCase()}`}
+          onClick={() => window.scrollTo(0, 0)}
           className="
             bg-[#5c3a3a]
             text-white

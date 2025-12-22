@@ -13,6 +13,7 @@ const NotFound = () => {
                 <div className="flex justify-center mt-8">
                     <Link
                         to="/"
+                        onClick={() => window.scrollTo(0, 0)}
                         className="bg-white text-orange-500 font-bold px-16 py-5 rounded-full hover:bg-orange-100 transition-colors text-lg"
                     >
                         back to safety

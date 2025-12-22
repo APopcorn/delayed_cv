@@ -99,6 +99,7 @@ const ProjectGallery = () => {
                 </div>
                 <Link
                     to="/"
+                    onClick={() => window.scrollTo(0, 0)}
                     className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition"
                 >
                     Home
@@ -120,6 +121,7 @@ const ProjectGallery = () => {
                         <Link
                             key={project.id}
                             to={project.link || "/"}
+                            onClick={() => window.scrollTo(0, 0)}
                             className="group"
                         >
                             <div className="
@@ -156,6 +158,7 @@ const ProjectGallery = () => {
                         <Link
                             key={project.id}
                             to={project.link || "/"}
+                            onClick={() => window.scrollTo(0, 0)}
                             className="group"
                         >
                             <div className="bg-gradient-to-b from-project-fade-t to-project-fade-b rounded-[2.5rem] p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">

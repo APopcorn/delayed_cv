@@ -1,4 +1,5 @@
 import ExpandableTextArea from "./ExpandableTextArea";
+import { Link } from "react-router-dom";
 
 interface ProjectShowcaseProps {
   projectTitle: any;
@@ -11,34 +12,47 @@ const ProjectShowcase = ({ projectTitle, text, link, img }: ProjectShowcaseProps
   return (
     <div className="
       rounded-[2rem] 
-      text-hero-text 
       
-      w-[75%] 
+      w-[85%] md:w-[75%] 
       m-8
                   
       bg-gradient-to-b 
       from-project-fade-t 
       to-project-fade-b
 
-      md:grid 
+      flex flex-col md:grid 
       gap-4 
-      grid-cols-5
-      grid-rows-2 
+      md:grid-cols-5
+      md:grid-rows-1
+      p-6 md:p-10
       "
     >   
       <div className="
-        col-start-1	col-end-3
-        row-start-1	row-end-3
-        m-10
+        md:col-start-1 md:col-end-3
+        md:row-start-1 md:row-end-2
+        flex flex-col
       ">
-        <a 
-          href={link}
-          target="_blank" 
-          rel="noreferrer"
+        <h1 className="text-[10vw] md:text-[5vw] font-bold font-mono text-white mb-4">{projectTitle}</h1>
+        <div className="text-black text-[1rem] md:text-[1.1rem] mb-6 flex-grow">
+          <ExpandableTextArea text={text} />
+        </div>
+        <Link 
+          to={`/project/${projectTitle.toLowerCase()}`}
+          className="
+            bg-[#5c3a3a]
+            text-white
+            px-16 py-5
+            text-center
+            font-medium
+            text-[1.1rem]
+            hover:bg-[#4a2e2e]
+            transition-colors
+            inline-block
+            w-fit
+          "
         >
-          <h1 className="md:text-[5vw] text-[8vw]">{projectTitle}</h1>
-        </a>
-        <ExpandableTextArea text={text} />
+          To Project page
+        </Link>
       </div>
       <a 
         href={link}
@@ -47,15 +61,14 @@ const ProjectShowcase = ({ projectTitle, text, link, img }: ProjectShowcaseProps
         className="
           bg-white
           rounded-[2rem]
-          col-start-3	col-end-6
-          row-start-1	row-end-3
-          m-10
+          md:col-start-3 md:col-end-6
+          md:row-start-1 md:row-end-2
+          p-8
+          flex items-center justify-center
           aspect-[4/3]
           "
       >
-        <div className="m-8">
-          <img className="flex" src={img} alt={projectTitle} />
-        </div>
+        <img className="w-full h-full object-contain" src={img} alt={projectTitle} />
       </a>
     </div>
   );

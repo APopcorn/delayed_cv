@@ -19,7 +19,7 @@ const Projects = (_props: any, ref: any) => {
         w-[100%]  
         flex flex-col items-center"
         >
-            <h1 className="select-none text-[6.5vw]">Projects</h1>
+            <h1 className="select-none text-[6.5vw] font-bold font-mono text-white self-end pr-8 md:pr-16">PROJECTS</h1>
             <ProjectShowcase
                 projectTitle={"Patch"}
                 text={

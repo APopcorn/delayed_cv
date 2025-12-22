@@ -10,6 +10,9 @@ export default {
       "home-all":
         "url('/src/assets/svg/background/home/BackgroundWave.svg'), url('/src/assets/TestFormats.png'), url('/src/assets/svg/background/home/BackgroundBubble.svg'), url('/src/assets/svg/background/home/FadingCircleSVG.svg')",
 
+      "home-wavs-only":
+        "url('/src/assets/svg/background/home/BackgroundWave.svg'), url('/src/assets/svg/background/home/FadingCircleSVG.svg')",
+
       "hero-personal-photo": "url('/src/assets/TestFormats.png')",
 
       "hero-bubble":
@@ -48,6 +51,8 @@ export default {
     backgroundPosition: {
       "move-hero":
         "bottom, bottom left, top right 38%, bottom 40% left 40%",
+      "move-hero-only":
+        "bottom, bottom 40% left 40%",
       "move-about": "top, center bottom -0.4%",
       "move-projects": "top, center bottom",
     },
@@ -55,6 +60,8 @@ export default {
       "fit-hero": "contain, contain, auto, auto",
       "fit-about": "contain, contain",
       "fit-projects": "contain, contain",
+      "fit-hero-only": "contain, auto",
+
     },
     colors: {
       "hero-white": "#FFFFFF",

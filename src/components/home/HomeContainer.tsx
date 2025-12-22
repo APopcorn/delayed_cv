@@ -1,14 +1,13 @@
-import LinkGit from "./linkComponents/LinkGit"
-import LinkCv from "./linkComponents/LinkCv"
-import LinkLinkedIn from "./linkComponents/LinkLinkedIn"
+import SocialLinksBar from "./linkComponents/SocialLinksBar";
 import { forwardRef } from "react";
 
 const HomeContainer = (_props: any, ref: any) => {
-  return (
-    <div ref={ref} className="bg-hero-white overflow-hidden">
-      <div className="bg-home-all bg-no-repeat bg-fit-hero bg-move-hero w-[100%] h-[100svh]">
-        <div className="select-none text-hero-text whitespace-nowrap font-mono">
-          <div className="
+    return (
+        <div ref={ref} className="bg-hero-white overflow-hidden">
+            <div className="bg-home-all bg-no-repeat bg-fit-hero bg-move-hero w-[100%] h-[100svh]">
+                <div className="select-none text-hero-text whitespace-nowrap font-mono">
+                    <div
+                        className="
             absolute
             top-[17%]
             left-[25%]
@@ -25,10 +24,12 @@ const HomeContainer = (_props: any, ref: any) => {
             text-transparent 
             bg-clip-text
             duration-100	
-          ">
-            Welcome
-          </div>
-          <div className="
+          "
+                    >
+                        Welcome
+                    </div>
+                    <div
+                        className="
             absolute
             top-[20%]
             left-[5%]
@@ -45,10 +46,12 @@ const HomeContainer = (_props: any, ref: any) => {
             text-transparent 
             bg-clip-text
             duration-100	
-          ">
-            I'm Ernst Padron,
-          </div>
-          <div className="
+          "
+                    >
+                        I'm Ernst Padron,
+                    </div>
+                    <div
+                        className="
             absolute
             top-[25%]
             left-[8%]
@@ -65,20 +68,15 @@ const HomeContainer = (_props: any, ref: any) => {
             text-transparent 
             bg-clip-text
             duration-100	
-          ">
-            Software Engineer
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-x-[10%] absolute inset-x-0 bottom-[5%]">
-            <LinkGit />
-            <LinkCv />
-            <LinkLinkedIn />
-          </div>
-
+          "
+                    >
+                        Software Engineer
+                    </div>
+                </div>
+            </div>
+            <SocialLinksBar />
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default forwardRef(HomeContainer);

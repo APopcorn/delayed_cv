@@ -1,6 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
 import garlicIcon from "../../assets/icons/garlic.svg";
-import GalleryButton from "../navbar/GalleryButton";
 
 const Project = () => {
     return (

@@ -1,4 +1,4 @@
-import AboutMeBig from "./AboutMeBig";
+// import AboutMeBig from "./AboutMeBig";
 import AboutMeCluster from "./AboutMeCluster";
 import { forwardRef } from "react";
 

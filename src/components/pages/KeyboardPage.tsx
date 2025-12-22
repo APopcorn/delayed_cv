@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import garlicIcon from "../../assets/icons/garlic.svg";
 import patch from "../../assets/projects/Patch.svg";
 
 const KeyboardPage = () => {

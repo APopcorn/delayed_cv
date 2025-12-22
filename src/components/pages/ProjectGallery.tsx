@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import garlic from "../../assets/projects/Garlic.svg";
 import patch from "../../assets/projects/Patch.svg";
-import rumbi from "../../assets/projects/Rumbi.svg";
+// import rumbi from "../../assets/projects/Rumbi.svg";
 import garlicIcon from "../../assets/icons/garlic.svg";
+import planter from "../../assets/projects/Planter.svg";
+import keyboard from "../../assets/projects/Keyboard.svg";
+import stm32h7 from "../../assets/projects/STM32H7.svg";
+import upRumbi from "../../assets/projects/upRumbi.svg";
+import stripcad from "../../assets/projects/stripcad.svg";
 
 interface Project {
     id: number;
@@ -24,28 +29,28 @@ const ProjectGallery = () => {
         {
             id: 2,
             name: "PLANTER",
-            image: patch, // Replace with actual planter image
+            image: planter, 
             link: "/project/planter",
             category: "main",
         },
         {
             id: 3,
             name: "RUMBI",
-            image: rumbi,
+            image: upRumbi,
             link: "/project/rumbi",
             category: "main",
         },
         {
             id: 4,
             name: "KEYBOARD",
-            image: patch, // Replace with actual keyboard image
+            image: keyboard, 
             link: "/project/keyboard",
             category: "main",
         },
         {
             id: 5,
             name: "STM32H7",
-            image: patch, // Replace with actual stm32h7 image
+            image: stm32h7,
             link: "/project/stm32h7",
             category: "main",
         },
@@ -59,7 +64,7 @@ const ProjectGallery = () => {
         {
             id: 7,
             name: "STRIP WEB",
-            image: patch, // Replace with actual strip web image
+            image: stripcad,
             link: "/project/strip-web",
             category: "minor",
         },

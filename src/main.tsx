@@ -5,8 +5,12 @@ import App from "./App.tsx";
 import "./index.css";
 
 import ProjectGallery from "./components/pages/ProjectGallery.tsx";
-import PatchPage from "./components/pages/PatchPage.tsx";
 import Project from "./components/pages/Project.tsx";
+import PatchPage from "./components/pages/PatchPage.tsx";
+import RumbiPage from "./components/pages/RumbiPage.tsx";
+import PlanterPage from "./components/pages/PlanterPage.tsx";
+import KeyboardPage from "./components/pages/KeyboardPage.tsx";
+import LFSPage from "./components/pages/LFSPage.tsx";
 
 const router = createBrowserRouter(
     [
@@ -25,6 +29,22 @@ const router = createBrowserRouter(
                 {
                     path: "patch",
                     Component: PatchPage,
+                },
+                {
+                    path: "rumbi",
+                    Component: RumbiPage,
+                },
+                {
+                    path: "planter",
+                    Component: PlanterPage,
+                },
+                {
+                    path: "keyboard",
+                    Component: KeyboardPage,
+                },
+                {
+                    path: "STM32H7",
+                    Component: LFSPage,
                 },
             ],
         },

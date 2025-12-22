@@ -11,6 +11,7 @@ import RumbiPage from "./components/pages/RumbiPage.tsx";
 import PlanterPage from "./components/pages/PlanterPage.tsx";
 import KeyboardPage from "./components/pages/KeyboardPage.tsx";
 import LFSPage from "./components/pages/LFSPage.tsx";
+import NotFound from "./components/pages/NotFound.tsx";
 
 const router = createBrowserRouter(
     [
@@ -47,6 +48,10 @@ const router = createBrowserRouter(
                     Component: LFSPage,
                 },
             ],
+        },
+        {
+            path: "*",
+            Component: NotFound,
         },
     ],
     {

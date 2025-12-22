@@ -18,8 +18,10 @@ const Academic = () => {
         w-[100%]
       "
     >
-      <h1 className="text-[2rem]">Academic</h1>
-      <div className="flex flex-nowrap lg:flex-row flex-col gap-4 mb-4 mt-4">
+      <h1 className="text-[2rem] font-bold font-mono text-white">
+        Academic</h1>
+
+      <div className="flex flex-nowrap lg:flex-row flex-col gap-4 mb-8 mt-4">
         <img
           className="w-[7rem]"
           src={lth}

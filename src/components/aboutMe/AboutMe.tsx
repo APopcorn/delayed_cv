@@ -14,7 +14,7 @@ const AboutMe = (_props: any, ref: any) => {
         bg-white 
         w-[100%] flex flex-col items-center"
     >
-      <h1 className="select-none text-[6.5vw]">About Me</h1>
+      <h1 className="select-none text-[6.5vw] font-bold font-mono self-start pl-8 md:pl-16 text-white">ABOUT ME</h1>
       <AboutMeBig />
       <AboutMeCluster />
     </div>

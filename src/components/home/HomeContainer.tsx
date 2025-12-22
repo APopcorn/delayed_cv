@@ -70,7 +70,7 @@ const HomeContainer = (_props: any, ref: any) => {
             duration-100	
           "
                     >
-                        Software Engineer
+                        Embedded Engineer
                     </div>
                 </div>
                 <SocialLinksBar />

@@ -73,8 +73,8 @@ const HomeContainer = (_props: any, ref: any) => {
                         Software Engineer
                     </div>
                 </div>
+                <SocialLinksBar />
             </div>
-            <SocialLinksBar />
         </div>
     );
 };
